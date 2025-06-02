@@ -1,0 +1,342 @@
+.builderPage {
+  min-height: 100vh;
+  background-color: #111827;
+  color: #fff;
+}
+
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.title span {
+  color: #3b82f6;
+}
+
+.subtitle {
+  text-align: center;
+  color: #9ca3af;
+  margin-bottom: 3rem;
+}
+
+.builderContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #1f2937;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.editorSection {
+  padding: 1.5rem;
+  background-color: #111827;
+  border-radius: 0.5rem;
+}
+
+.editorHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.editorActions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.previewBtn,
+.saveBtn,
+.downloadBtn {
+  background-color: #374151;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  border: none;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.downloadBtn {
+  background-color: #3b82f6;
+}
+
+.previewBtn svg,
+.downloadBtn svg {
+  width: 20px;
+  height: 20px;
+}
+
+.editorTabs {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #374151;
+}
+
+.tabButton {
+  background: none;
+  border: none;
+  padding: 0.5rem 1rem;
+  color: #9ca3af;
+  cursor: pointer;
+  font-size: 1rem;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s;
+}
+
+.activeTab {
+  color: #3b82f6;
+  border-bottom: 2px solid #3b82f6;
+}
+
+.addButton {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #1f2937;
+  color: #fff;
+  border: none;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.2s;
+  margin-top: 1rem;
+}
+
+.addButton:hover {
+  background-color: #374151;
+}
+
+.previewSection {
+  background-color: #111827;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  color: #fff;
+  overflow-y: hidden; /* Change from auto to hidden */
+  max-height: none; /* Remove the max-height property */
+}
+
+.resumePreview {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  color: #111827;
+}
+
+.experienceSection h2,
+.educationSection h2,
+.skillsSection h2 {
+  color: #111827;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.previewName {
+  font-size: 2rem;
+  color: #111827;
+  margin-bottom: 0.5rem;
+}
+
+.previewTitle {
+  font-size: 1.25rem;
+  color: #4b5563;
+}
+
+.editorTabs {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.editorTabs button {
+  background: none;
+  border: none;
+  padding: 0.5rem 1rem;
+  color: #9ca3af;
+  cursor: pointer;
+  font-size: 1rem;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.activeTab {
+  color: #3b82f6;
+  border-color: #3b82f6;
+  font-weight: bold;
+}
+
+.editorForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.formGroup label {
+  margin-bottom: 0.25rem;
+  font-weight: 600;
+}
+
+.formGroup input,
+.formGroup textarea {
+  padding: 0.5rem;
+  border-radius: 0.375rem;
+  border: 1px solid #374151;
+  background-color: #1f2937;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.formRow {
+  display: flex;
+  gap: 1rem;
+}
+
+.experienceItem,
+.educationItem,
+.skillItem {
+  padding: 1rem;
+  border-radius: 0.375rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.skillItem .formGroup label {
+  color: #fff;
+}
+
+.skillItem .formGroup input {
+  background-color: #1f2937;
+  color: #fff;
+  border: 1px solid #374151;
+}
+
+.itemHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.deleteBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  color: #ef4444;
+  transition: color 0.3s ease;
+}
+
+.deleteBtn:hover {
+  color: #dc2626;
+}
+
+.deleteBtn svg {
+  width: 20px;
+  height: 20px;
+}
+
+.addExperienceBtn,
+.addEducationBtn,
+.addSkillBtn {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.addExperienceBtn:hover,
+.addEducationBtn:hover,
+.addSkillBtn:hover {
+  background-color: #2563eb;
+}
+
+.footer {
+  background-color: #1f2937;
+  color: #9ca3af;
+  padding: 2rem 1rem 1rem;
+  margin-top: 2rem;
+  border-radius: 0.5rem;
+}
+
+.footerContent {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.footerLeft,
+.footerCenter,
+.footerRight {
+  flex: 1;
+  min-width: 200px;
+}
+
+.logoIcon {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #3b82f6;
+  margin-right: 0.5rem;
+}
+
+.logoText {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.socialLinks a {
+  margin-right: 1rem;
+  color: #9ca3af;
+  font-size: 1.25rem;
+  transition: color 0.2s;
+}
+
+.socialLinks a:hover {
+  color: white;
+}
+
+.contactButton {
+  display: inline-block;
+  background-color: #3b82f6;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.contactButton:hover {
+  background-color: #2563eb;
+}
+
+.footerBottom {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.875rem;
+  color: #6b7280;
+}
